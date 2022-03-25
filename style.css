@@ -1,0 +1,445 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+*, html {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+
+:root{
+    --redbright: rgba(182,0,0,1);
+    --reddark: rgba(57,0,0,1);
+    --redverydark: rgba(28,0,0,1);
+}
+
+body::-webkit-scrollbar {
+    width: 8px;
+    height: 3px;
+}
+  
+body::-webkit-scrollbar-track {
+    background: var(--redverydark);
+}
+  
+body::-webkit-scrollbar-thumb {
+    background-color: var(--redbright);
+    border-radius: 20px;
+}
+
+body{
+    
+    width: 100%;
+    height: 100%;
+    background: rgb(28,0,0);
+    background: linear-gradient(23deg, rgba(28,0,0,1) 17%, rgba(57,0,0,1) 38%, rgba(182,0,0,1) 100%);
+}
+
+
+section{
+    width: 100%;
+    height: 100vh;
+
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+
+
+.container {
+    width: 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.leftnav {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    height: 100%;
+    left: 0;
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.leftnav svg{
+    height: 20px;
+    transition: 0.3s;
+    fill: #b60000;
+}
+
+.leftnav img{
+    height: 20px;
+    transition: 0.3s;
+}
+
+.leftnav svg:hover{
+    -webkit-filter: drop-shadow(0px 0px 7px rgb(255, 255, 255));
+    filter: drop-shadow(0px 0px 7px rgb(255, 255, 255));
+    transition: 0.3s;
+    fill: #fff;
+}
+
+
+.leftnav img:hover{
+    -webkit-filter: drop-shadow(0px 0px 7px rgb(255, 255, 255));
+    filter: drop-shadow(0px 0px 7px rgb(255, 255, 255));
+    transition: 0.3s;
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.main h1{
+    color: #fff;
+    font-family: 'Fredoka One', cursive;
+    font-size: 90px;
+    width: 600px;
+    text-align: end;
+    text-shadow: 0px 4px 5px #1C0000;
+}
+
+.main img{
+    height: 300px;
+    margin-top: 100px;
+}
+
+.trailer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.trailer h1{
+    color: #fff;
+    font-family: 'Fredoka One', cursive;
+    font-size: 90px;
+    width: 90%;
+    text-align: end;
+    text-shadow: 0px 4px 5px #1C0000;
+}
+
+.trailer-body{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+}
+
+.trailer-body p{
+    color: #fff;
+    font-size: 20px;
+    text-align: end;
+    font-family: 'Indie Flower', cursive;
+    padding-top: 20px;
+}
+
+.trailer-button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.trailer-button img{
+    width: 400px;
+    border-radius: 10px;
+    -webkit-filter: drop-shadow(0px 0px 7px rgba(255, 255, 255, 0.575));
+    filter: drop-shadow(0px 0px 7px rgba(255, 255, 255, 0.575));
+}
+
+button {
+    font-family: 'Fredoka One', cursive;
+    transition: all 300ms ease-in-out;
+    padding: 10px 25px;
+    border-radius: 100px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.movie-btn{
+    background-color: #fff;
+    color: var(--redbright);
+}
+
+.movie-btn:hover{
+    background-color: var(--redbright);
+    color: #fff;
+}
+
+.popup1{
+    padding: 40px;
+    width: 400px;
+    background-color: #fff !important;
+    border-radius: 6px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+
+    visibility: hidden;
+    transition: transform 0.4s;
+}
+
+.open-popup{
+    visibility: visible;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.popup1 h2{
+    font-family: 'Fredoka One', cursive;
+    color: var(--redbright);
+    font-size: 30px;
+}
+
+.popup1 p{
+    font-family: 'Indie Flower', cursive;
+    font-size: 20px;
+}
+
+.popup1 img{
+    width: 150px;
+}
+
+.popup-btn{
+    background-color: #fff;
+    color: var(--redbright);
+    border: 1px solid var(--redbright);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.popup-btn2{
+    font-size: 13px;
+    font-family: 'Fredoka One', cursive;
+    background-color: #fff;
+    color: black;
+}
+
+.popup-btn2:hover{
+    font-size: 13px;
+    font-family: 'Fredoka One', cursive;
+    background-color: #fff;
+    color: var(--redbright);
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+}
+
+.popup-btn:hover{
+    background-color: var(--redbright);
+    color: #fff;
+}
+
+.meilin, .priya, .miriam, .abby{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    
+}
+
+.meilin{
+    background: rgba(243, 69, 69, 0.300);
+}
+
+.miriam{
+    background: rgba(0, 255, 71, 0.40);
+}
+
+.priya{
+    background: rgba(255, 153, 0, 0.40);
+}
+
+.abby{
+    background: rgba(196, 117, 235, 0.40);
+}
+
+.meilin-body, .priya-body, .miriam-body, .abby-body{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.meilin h1, .priya h1, .miriam h1, .abby h1{
+    color: #fff;
+    font-family: 'Fredoka One', cursive;
+    font-size: 90px;
+    text-align: start;
+    text-shadow: 0px 4px 5px #1C0000;
+}
+
+.meilin h3, .priya h3, .miriam h3, .abby h3{
+    color: #fff;
+    font-family: 'Indie Flower', cursive;
+    font-size: 30px;
+    text-align: start;
+    margin-left: 30px;
+}
+
+.meilin p, .priya p, .miriam p, .abby p{
+    color: #fff;
+    font-family: 'Indie Flower', cursive;
+    font-size: 20px;
+    margin-left: 30px;
+}
+
+.meilin-img img, .priya-img img, .miriam-img img, .abby-img img{
+    width: 350px;
+    margin-left: 30px;
+}
+
+.char-btn{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.meilin-btn{
+    color: #FF0000;
+}
+
+.meilin-btn:hover{
+    background-color: #FF0000;
+    color: #fff;
+}
+
+.miriam-btn{
+    color: #019A2C;
+}
+
+.miriam-btn:hover{
+    background-color: #019A2C;
+    color: #fff;
+}
+
+.priya-btn{
+    color: #FF7A00;
+}
+
+.priya-btn:hover{
+    background-color: #FF7A00;
+    color: #fff;
+}
+
+.abby-btn{
+    color: #bd62eb;
+}
+
+.abby-btn:hover{
+    background-color: #bd62eb;
+    color: #fff;
+}
+
+.about{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    
+    text-align: end;
+}
+
+.about h1{
+    color: #fff;
+    font-family: 'Fredoka One', cursive;
+    font-size: 90px;
+    width: 600px;
+    text-shadow: 0px 4px 5px #000000;
+}
+
+.about img{
+    height: 300px;
+    margin-top: 100px;
+}
+
+.about-body{
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.about p{
+    color: #fff;
+    font-family: 'Indie Flower', cursive;
+    font-size: 20px;
+}
+
+footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: #B60000;
+    color: white;
+
+    gap: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 20px;
+
+    color: #fff;
+    font-family: 'Fredoka One', cursive;
+    font-size: 13px;
+    text-decoration: none;
+ }
+
+ footer a{
+    color: #ffffff;
+    transition: 0.3s;
+ }
+ footer a:hover{
+    color: rgba(28,0,0,1);
+ }
+
+ .leftfooter{
+    
+ }
+
+ .midfooter{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+ }
+
+ .rightfooter{
+    text-align: end;
+}
+

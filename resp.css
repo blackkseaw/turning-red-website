@@ -1,0 +1,361 @@
+@media screen and (max-width: 1255px) {
+
+    /* MAIN  */
+
+    .main h1{
+        color: #fff;
+        font-size: 60px;
+        width: 300px;
+    }
+    
+    .main img{
+        height: 300px;
+        margin-top: 100px;
+    }
+
+
+    /* TRAILER */
+
+    .trailer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        
+        gap: 40px;
+    }
+
+    .trailer h1{
+        color: #fff;
+        font-size: 60px;
+        width: 300px;
+    }
+
+    .trailer p{
+        color: #fff;
+        font-size: 15px;
+        width: auto;
+        text-align: justify;
+    }
+
+    .trailer-button{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    /* CHARS */
+
+    .meilin, .priya, .miriam, .abby{
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .meilin-body, .priya-body, .miriam-body, .abby-body{
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .meilin h1, .priya h1, .miriam h1, .abby h1{
+        font-size: 45px;
+        text-align: center;
+    }
+    
+    .meilin h3, .priya h3, .miriam h3, .abby h3{
+        color: #fff;
+        font-family: 'Indie Flower', cursive;
+        font-size: 25px;
+        text-align: center;
+        margin-left: 0;
+
+        margin-top: 10px;
+    }
+    
+    .meilin p, .priya p, .miriam p, .abby p{
+        color: #fff;
+        font-family: 'Indie Flower', cursive;
+        width: 350px;
+        text-align: justify;
+        font-size: 15px;
+        margin-left: 0;
+        margin-top: 40px;
+    }
+    
+    .meilin-img img, .priya-img img, .miriam-img img, .abby-img img{
+        width: 230px;
+        margin-left: 0;
+    }
+
+    /* ABOUT */
+    .about{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        
+        gap: 40px;
+    }
+
+    .about p{
+        width: 350px;
+        text-align: justify;
+    }
+
+    .about img{
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 1065px) {
+    .main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+        padding: 100px;
+        gap: 40px;
+    }
+
+    .main h1{
+        color: #fff;
+        font-size: 45px;
+        width: auto;
+        
+        text-align: center;
+    }
+    
+    .main img{
+        height: 200px;
+        margin-top: 0;
+    }
+
+    .sidenav img{
+        height: 15px;
+    }
+
+    .trailer-body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        text-align: center;
+        
+        gap: 40px;
+    }
+
+    
+    .trailer-body p{
+        text-align: center;
+        width: 400px;
+    }
+
+    .trailer h1{
+        color: #fff;
+        font-size: 45px;
+        width: auto;
+        
+    }
+
+    /* CHARS */
+
+    .meilin, .priya, .miriam, .abby{
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .meilin-body, .priya-body, .miriam-body, .abby-body{
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .meilin h1, .priya h1, .miriam h1, .abby h1{
+        font-size: 45px;
+        text-align: center;
+    }
+    
+    .meilin h3, .priya h3, .miriam h3, .abby h3{
+        color: #fff;
+        font-family: 'Indie Flower', cursive;
+        font-size: 25px;
+        text-align: center;
+        margin-left: 0;
+
+        margin-top: 10px;
+    }
+    
+    .meilin p, .priya p, .miriam p, .abby p{
+        color: #fff;
+        font-family: 'Indie Flower', cursive;
+        width: 350px;
+        text-align: justify;
+        font-size: 15px;
+        margin-left: 0;
+        margin-top: 40px;
+    }
+    
+    .meilin-img img, .priya-img img, .miriam-img img, .abby-img img{
+        width: 230px;
+        margin-left: 0;
+    }
+
+    /* ABOUT */
+    .about{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        
+        gap: 40px;
+
+        height: auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .about h1{
+        font-size: 45px;
+        text-align: center;
+        width: auto;
+    }
+
+    .about p{
+        width: 300px;
+        text-align: justify;
+    }
+
+    .about img{
+        margin-top: 0;
+        width: 150px;
+    }
+
+    footer{
+        font-size: 9px;
+    }
+
+    footer img{
+        width: 20px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+        padding: 50px;
+        gap: 40px;
+    }
+
+    .main h1{
+        font-size: 45px;
+        width: auto;
+        
+        text-align: center;
+    }
+    
+    .main img{
+        height: 200px;
+        margin-top: 0;
+    }
+
+    .sidenav img{
+        height: 15px;
+    }
+
+    .trailer-body p{
+        font-size: 15px;
+        width: 200px;
+    }
+
+    .trailer h1{
+    
+        font-size: 45px;
+        width: auto;
+        
+        text-align: center;
+    }
+
+    .trailer-button img{
+        width: 200px;
+    }
+
+    /* CHARS */
+
+    .meilin, .priya, .miriam, .abby{
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .meilin-body, .priya-body, .miriam-body, .abby-body{
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .meilin h1, .priya h1, .miriam h1, .abby h1{
+        font-size: 45px;
+        text-align: center;
+    }
+    
+    .meilin h3, .priya h3, .miriam h3, .abby h3{
+        color: #fff;
+        font-family: 'Indie Flower', cursive;
+        font-size: 25px;
+        text-align: center;
+        margin-left: 0;
+
+        margin-top: 10px;
+    }
+    
+    .meilin p, .priya p, .miriam p, .abby p{
+        color: #fff;
+        font-family: 'Indie Flower', cursive;
+        width: 200px;
+        text-align: justify;
+        font-size: 15px;
+        margin-left: 0;
+        margin-top: 40px;
+    }
+    
+    .meilin-img img, .priya-img img, .miriam-img img, .abby-img img{
+        width: 200px;
+        margin-left: 0;
+    }
+
+    /* ABOUT */
+    .about{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        
+        gap: 20px;
+    }
+
+    .about h1{
+        font-size: 45px;
+        text-align: center;
+        width: auto;
+    }
+
+    .about p{
+        width: 200px;
+        font-size: 15px;
+        text-align: justify;
+    }
+
+    .about img{
+        width: 200px;
+        margin-top: 0;
+    }
+
+}
